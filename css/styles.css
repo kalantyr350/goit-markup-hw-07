@@ -476,7 +476,7 @@ address {
 
 /* clients */
 
-.client-title {
+.client__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -486,15 +486,15 @@ address {
   color: var(--text-color);
 }
 
-.clients-list {
+.clients__list {
   display: inline-flex;
 }
 
-.client-item:not(:last-child) {
+.client__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-link {
+.client__link {
   width: 170px;
   height: 92px;
 
@@ -510,13 +510,13 @@ address {
   transition: color 250ms var(--timing-f), border-color 250ms var(--timing-f);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client__link:hover,
+.client__link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
 }
 
-.client-icon {
+.client__icon {
   fill: currentColor;
 }
 
