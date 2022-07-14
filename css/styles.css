@@ -280,7 +280,7 @@ address {
 
 /* services */
 
-.icon-item {
+.icon__item {
   width: 270px;
   height: 120px;
 
@@ -295,27 +295,27 @@ address {
   background-color: var(--bg-icon-sevices);
 }
 
-.icon-item:last-child {
+.services__icon-item:last-child {
   margin-right: 0;
 }
 
-.services-list {
+.services__list {
   display: flex;
   flex-wrap: wrap;
 }
 
-.services-item {
+.services__item {
   width: 270px;
 
   margin-right: 30px;
   flex-basis: calc((100% - 90px) / 4);
 }
 
-.services-item:nth-child(4n) {
+.services__item:nth-child(4n) {
   margin-right: 0;
 }
 
-.services .title {
+.services__title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -326,7 +326,7 @@ address {
   color: var(--text-color);
 }
 
-.services .text {
+.services__text {
   line-height: 1.71;
 }
 
