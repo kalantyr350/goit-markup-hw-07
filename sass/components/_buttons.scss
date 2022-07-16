@@ -1,0 +1,118 @@
+.hero__btn {
+    display: block;
+    min-width: 200px;
+    min-height: 50px;
+
+    margin: 0 auto;
+    padding: 10px 32px;
+    border: 0;
+
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+
+    transition: background-color 250ms var(--timing-f);
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white-txt-color);
+    background-color: var(--accent-color);
+    
+    &__btn:hover,
+    &__btn:focus {
+        background-color: var(--button-accent);
+    }
+}
+
+.modal-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: var(--white-bg-color);
+    color: #000;
+
+    cursor: pointer;
+    
+    &:hover .modal-close,
+    &:focus .modal-close {
+        color: var(--accent-color);
+    }
+}
+
+.modal-submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 55px 10px 56px;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    border: 0;
+    background-color: var(--accent-color);
+    color: var(--white-txt-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    cursor: pointer;
+    transition: background-color 250ms var(--timing-f);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--button-accent);
+    }
+}
+
+.footer-bt {
+    max-width: 200px;
+    max-height: 50px;
+
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 28px 10px 29px;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    border: none;
+    border-radius: 4px;
+    background: var(--accent-color);
+    color: var(--white-txt-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+    transition: background-color 250ms var(--timing-f);
+}
+
+.footer-bt:hover,
+.footer-bt:focus {
+    background-color: var(--button-accent);
+}
+
+.footer-bt-icon {
+    align-items: center;
+    justify-items: center;
+    margin-left: 10px;
+
+    fill: var(--white-txt-color);
+}
