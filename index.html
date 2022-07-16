@@ -24,28 +24,42 @@
   <body>
     <!--header-->
     <header class="header">
-      <div class="conteiner header-conteiner">
+      <div class="conteiner header__conteiner">
+        <a class="logo logo--margin-r link" href="./index.html">
+          Web<span class="logo__item--black">Studio</span>
+        </a>
         <nav class="nav">
-          <a class="logo link" href="./index.html"><span class="logo-item">Web</span>Studio</a>
-          <ul class="list menu-nav">
-            <li class="item"><a class="nav-link link current" href="./index.html">Студия</a></li>
-            <li class="item"><a class="nav-link link" href="./portfolio.html">Портфолио</a></li>
-            <li class="item"><a class="nav-link link" href="./index.html">Контакты</a></li>
+          <ul class="list nav__menu">
+            <li class="nav__item">
+              <a class="nav__link link__txt nav__link--current link" href="./index.html">Студия</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link__txt link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link link__txt link" href="./index.html">Контакты</a>
+            </li>
           </ul>
         </nav>
-        <ul class="list list-contacts">
-          <li class="item header-contact-item">
-            <a class="link link-contact" href="mail:info@devstudio.com">
-              <svg class="icon-envelope" width="16px" height="12px">
+        <ul class="contacts contacts--flex list">
+          <li class="contacts__item">
+            <a
+              class="link contacts__link contact__link--cl-grey link__txt"
+              href="mail:info@devstudio.com"
+            >
+              <svg class="contacts__icon" width="16px" height="12px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="item header-contact-item">
-            <a class="link link-contact" href="tel:+380961111111">
-              <svg class="icon-vector" width="10px" height="16px">
-                <use href="./images/icons.svg#icon-vector"></use>
+          <li class="contacts__item">
+            <a
+              class="link contacts__link contact__link--cl-grey link__txt"
+              href="tel:+380961111111"
+            >
+              <svg class="contacts__icon" width="10px" height="16px">
+                <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
             </a>
@@ -68,7 +82,7 @@
           <h2 class="visualli-hedden">Наши преимущества</h2>
           <ul class="services__list list">
             <li class="services__item">
-              <div class="services__icon-item">
+              <div class="services__icon-conteiner">
                 <svg class="services__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -80,7 +94,7 @@
             </li>
 
             <li class="services__item">
-              <div class="services__icon-item">
+              <div class="services__icon-conteiner">
                 <svg class="services__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -92,7 +106,7 @@
             </li>
 
             <li class="services__item">
-              <div class="services__icon-item">
+              <div class="services__icon-conteiner">
                 <svg class="services__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -104,7 +118,7 @@
             </li>
 
             <li class="services__item">
-              <div class="services__icon-item">
+              <div class="services__icon-conteiner">
                 <svg class="services__icon" width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -333,7 +347,7 @@
       <!-- clients -->
       <section class="clients section">
         <div class="conteiner">
-          <h2 class="client__title">Постоянные клиенты</h2>
+          <h2 class="client__title title">Постоянные клиенты</h2>
           <ul class="list clients__list">
             <li class="client__item">
               <a class="link client__link" href="./index.html">
@@ -386,8 +400,8 @@
     <footer class="footer">
       <div class="conteiner conteiner-flex">
         <div>
-          <a class="logo-footer link" href="./index.html">
-            <span class="logo-item">Web</span>Studio
+          <a class="logo footer__logo link" href="./index.html">
+            Web<span class="logo__item--white">Studio</span>
           </a>
 
           <address>
