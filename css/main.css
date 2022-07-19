@@ -24,6 +24,26 @@
   --timing-f: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: "Raleway", sans-serif;
+  src: url("../../fonts/Raleway/Raleway-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/Roboto/Roboto-Black.ttf");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/Roboto/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/Roboto/Roboto-Medium.ttf");
+}
+@font-face {
+  font-family: "Roboto", sans-serif;
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf");
+}
 .visualli-hedden {
   position: absolute;
   width: 1px;
@@ -264,13 +284,14 @@ address {
   -ms-flex-item-align: center;
       align-self: center;
 }
-.nav__item:not(:last-child) {
-  margin-right: 50px;
-}
 .nav__txt {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav__link {
@@ -282,6 +303,13 @@ address {
   -webkit-transition: color 250ms var(--timing-f);
   transition: color 250ms var(--timing-f);
 }
+.nav__link:hover, .nav__link:focus {
+  color: var(--accent-color);
+}
+
+.nav__link--current {
+  color: var(--accent-color);
+}
 .nav__link--current::after {
   content: "";
   position: absolute;
@@ -292,12 +320,6 @@ address {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
-.nav__link--current {
-  color: var(--accent-color);
-}
-.nav__link:hover, .nav__link:focus {
-  color: var(--accent-color);
 }
 
 /* header contact */
@@ -382,7 +404,7 @@ address {
 .title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.1666666667;
   text-align: center;
   color: var(--text-color);
 }
@@ -831,6 +853,7 @@ address {
 .team {
   background-color: var(--bg-team);
 }
+
 .team-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -838,6 +861,15 @@ address {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.team-list .title {
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--text-color);
+  line-height: 1.18;
+}
+
 .team-item {
   margin-right: 30px;
   -ms-flex-preferred-size: calc((100% - 90px) / 4);
@@ -850,16 +882,9 @@ address {
 .team-item:nth-child(4n) {
   margin-right: 0;
 }
+
 .team-conteiner {
   padding: 30px 0;
-}
-.team-list .title {
-  margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  text-align: center;
-  color: var(--text-color);
-  line-height: 1.18;
 }
 .team-conteiner .text {
   margin-bottom: 16px;

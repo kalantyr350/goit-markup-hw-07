@@ -1,12 +1,10 @@
 .title {
+  @include fonts(700, 36px, 42px, null);
 
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    color: var(--text-color);
+  text-align: center;
+  color: var(--text-color);
 
-    &--margin-b{
-        margin-bottom: 50px;
-    }
+  &--margin-b {
+    margin-bottom: 50px;
+  }
 }

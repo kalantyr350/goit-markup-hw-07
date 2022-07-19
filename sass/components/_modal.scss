@@ -48,9 +48,7 @@
 .modal-title {
   margin-bottom: 12px;
 
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include fonts(700, 20px, 23px, null);
   text-align: center;
 
   color: var(--text-color);
