@@ -1,4 +1,4 @@
-.socials-link-list {
+.socials-list {
     display: flex;
     justify-content: center;
 }
@@ -15,13 +15,20 @@
     color: var(--icon-cl);
 
     transition: background-color 250ms var(--timing-f), color 250ms var(--timing-f);
+    
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--white-txt-color);
+    }
 }
 
-.social-link:hover,
-.social-link:focus {
-    background-color: var(--accent-color);
-    color: var(--white-txt-color);
+.socials-item {
+    &:not(:last-child) {
+        margin-right: 10px;
+    }
 }
+
 
 .social-icon {
     fill: currentColor;

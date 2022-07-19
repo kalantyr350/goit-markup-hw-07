@@ -1,92 +1,77 @@
-.footer {
-    padding: 60px 0;
-
-    background-color: var(--hero-bg-color);
+.conteiner-flex {
+  display: flex;
+  align-items: baseline;
 }
 
-.conteiner-flex {
-    display: flex;
-    align-items: baseline;
+.footer {
+  padding: 60px 0;
+
+  background-color: var(--hero-bg-color);
 }
 
 .footer__logo {
-    margin-bottom: 20px;
-    display: inline-block;
+  margin-bottom: 20px;
+  display: inline-block;
 }
 
 .contact-item {
-    margin-bottom: 7px;
-}
+  margin-bottom: 7px;
 
-.contact-item:last-child {
+  &:last-child {
     margin-bottom: 0;
+  }
 }
 
-.contact .address-studio,
-.contact .address-contact {
-    line-height: 1.71;
+.address__studio {
+  line-height: 1.71;
+  color: var(--white-txt-color);
 
-    color: var(--white-txt-color);
+  transition: color 250ms var(--timing-f);
 
-    transition: color 250ms var(--timing-f);
-}
-
-.contact .address-contact {
-    color: var(--footer-secondori-color);
-}
-
-.address-studio:hover,
-.address-studio:focus,
-.address-contact:hover,
-.address-contact:focus {
+  &:hover,
+  &:focus {
     color: var(--accent-color);
+  }
+}
+
+.address__contact {
+  line-height: 1.71;
+  color: var(--footer-secondori-color);
+
+  transition: color 250ms var(--timing-f);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 /* footer social */
 
 .footer-social-conteiner {
-    margin-left: 70px;
+  margin-left: 70px;
 }
 
 .title-social {
-    display: inline-block;
-    margin-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
 
-    font-size: 14px;
-    line-height: 1.14;
+  font-size: 14px;
+  line-height: 1.14;
 
-    text-transform: uppercase;
-    color: var(--white-txt-color);
-}
-
-.footer-socials-list {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-icon-item:not(:last-child) {
-    margin-right: 10px;
+  text-transform: uppercase;
+  color: var(--white-txt-color);
 }
 
 .footer-social-link {
-    width: 44px;
-    height: 44px;
+  background: rgba(255, 255, 255, 0.1);
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-
-    transition: background-color 250ms var(--timing-f);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .footer-social-icon {
-    fill: var(--white-txt-color);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--accent-color);
+  fill: var(--white-txt-color);
 }
